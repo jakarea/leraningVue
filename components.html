@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to components</title>
+	<script src="js/vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h2 class="pageheading">Understanding Components</h2>
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">Hello components</h3>
+				<div id="app7">
+				  <ol>
+				    <todo-item v-for="item in groseryList" v-bind:todo='item'></todo-item>
+				  </ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">Todo list using components</h3>
+				<div id="app8">
+				  <ol>
+				  	<todo-list v-for="todo in todoList" v-bind:list = 'todo'></todo-list>
+				  </ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">Students using components</h3>
+				<div id="app9">
+				  <ol>
+				  	<students v-for="student in students" v-bind:student = 'student'></students>
+				  </ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">Being clear about components</h3>
+				<div id="app10">
+					<table class="table table-bordered table-hover">
+					    <thead>
+					      <tr>
+					        <th>Product Name</th>
+					        <th>Price</th>
+					        <th>Company</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					    	<products v-for="product in products" v-bind:product="product"></products> 
+					    </tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--div class="block">
+		<h3 class="block-heading">Being clear about components</h3>
+		<div>
+			<tr>
+				<td>super glue</td><td>38</td><td>Pran</td>
+			</tr>
+			<tr>
+				<td>Sugur</td><td>64</td><td>Fresh</td>
+			</tr>
+			<tr>
+				<td>mouse</td><td>800</td><td>Logitech</td>
+			</tr>
+				<tr><td>Tissue paper</td><td>45</td><td>basundhara</td>
+			</tr>
+			<tr>
+				<td>Shirt</td><td>1590</td><td>DorjiBari</td>
+			</tr>
+			<tr>
+				<td>cegarate</td><td>12</td><td>Malbro</td>
+			</tr>
+			
+			<table class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Product Name</th> <th>Price</th> <th>Company</th>
+					</tr>
+				</thead> 
+				<tbody></tbody>
+			</table>
+		</div>
+	</div-->
+	<script src="js/components.js"></script>
+</body>
+</html>
