@@ -1,0 +1,17 @@
+.pageheading {
+    text-align: center;
+    font-weight: 600;
+    color: #42b983;
+}
+.block {
+	background: #f8f8f8;
+    margin: 25px;
+    padding: 25px;
+    color: #42b983;
+    border: #ffd1d1 solid 1px;
+}
+.block-heading {
+    text-align: center;
+    color: #f66;
+    margin-top: 0px;
+}

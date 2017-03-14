@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to Vue.Js</title>
+	<script src="vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h2 class="pageheading">Introduction to VueJs</h2>
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">Hello World</h3>
+				<div id="app">
+		 			{{ message }} 
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">Title bind by Vue</h3>
+				<div id="app2">
+		 			<span v-bind:title="title">Hover your mouse,the title you seeing, set by VueJs</span> 
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">Condition true/false </h3>
+				<div id="app3">
+		 			<span v-if="seen">You can see me, Because condition is true</span> 
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">For loop </h3>
+				<div id="app4">
+					<ol>
+						<li v-for="todo in todos"> {{ todo.text}}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">on Event </h3>
+				<div id="app5">
+					<span>{{ message }}</span><br><br>
+					<button class="btn btn-danger" v-on:click="reverseText">Click me</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="block">
+				<h3 class="block-heading">Real time input and output</h3>
+				<div id="app6">
+					<span>{{ input }}</span><br><br>
+					<input class="form-control" v-model="input" placeholder="Type here ...">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
